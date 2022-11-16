@@ -80,3 +80,17 @@ function changeListStyle()
 }
 
 changeListStyle()
+
+const listItem = document.querySelectorAll(".shopping li");
+
+function greenItem()
+{
+    for (let i = 0 ; i <listItem.length; i++)
+    {
+        if ( listItem[i].textContent.includes("green"))
+        {
+            listItem[i].classList.add("green")
+        }
+    }
+}
+greenItem();
