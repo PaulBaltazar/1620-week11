@@ -69,6 +69,14 @@ function populateList(list)
 
     }
 }
-
+// activity - Access and Change classes
 const shoppingList = ["cheese", "bread", "green pepper"];
 populateList(shoppingList)
+
+function changeListStyle()
+{
+    unorderedList.classList.remove("circleList");
+    unorderedList.classList.add("squareList");
+}
+
+changeListStyle()
